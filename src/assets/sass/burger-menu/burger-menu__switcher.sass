@@ -1,0 +1,40 @@
+.burger-menu__switcher
+  display: flex
+  width: 50px
+  height: 50px
+  background-color: $black
+  border-radius: 50%
+  justify-content: center
+  flex-direction: column
+  align-items: center
+  cursor: pointer
+  z-index: 200
+
+  &::before
+    position: absolute
+    content: ''
+    display: flex
+    transition: ease-out 0.2s
+    height: 2px
+    width: 50%
+    margin-bottom: 10px
+    background-color: #fff
+
+  &::after
+    position: absolute
+    content: ''
+    transition: ease-out 0.2s
+    display: flex
+    height: 2px
+    width: 50%
+    margin-top: 10px
+    background-color: #fff
+
+  i
+    position: absolute
+    display: flex
+    content: ''
+    transition: ease-out 0.2s
+    height: 2px
+    width: 50%
+    background-color: #fff

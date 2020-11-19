@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import '../../assets/sass/all.sass'
 import ServicesList from '../services/ServicesList'
 import AccordionList from '../accordion/AccordionList'
@@ -18,6 +18,13 @@ function Content(props) {
     {id: 3, question: 'Может ли Human Design изменить мою жизнь?', answer: 'Может, но давайте учтем ряд моментов. Сможете ли вы исполнять все инструкции, что предлагает вам расшифровка? Поверите ли в то, что предлагает вам расшифровка? Насколько вы плохо живете, чтобы была действительная необходимость делать резкие перемены? Возможно, прочитав эти вопросы вы поймете, что вам не надо менять свою жизнь. Расшифровка Бодиграф откроет вам много интересной информации о вас и предложит весьма практичные рекомендации для жизни.'},
     {id: 4, question: 'Почему питание - это важно?', answer: 'Как говорил Ра Уру Ху, на питании строится весь Дизайн, от начала и до конца. Без правильного питания вы не сможете правильно насыщать свои клетки. В следствии чего, вы начинаете проживать не свой Дизайн. Выстроение правильного питания, прежде всего - открытие себя. '}
   ]
+
+  const body = useRef(null)
+  const consultation = useRef(null)
+  const faq = useRef(null)
+  useEffect(() => {
+    props.updateData(body.current.getBoundingClientRect().top - 50, consultation.current.getBoundingClientRect().top - 50, faq.current.getBoundingClientRect().top + 420, faq.current.getBoundingClientRect().top + 800)
+  }, [])
 
   return(
     <div className='content'>
@@ -93,6 +100,7 @@ function Content(props) {
           </div>
 
           <div className='comfort'>
+          <div className='vertical-line vertical-line_right'></div>
             <h3 className='main-block__miniTitle main-block__miniTitle_right'>Наши компетенции</h3>
             <h2 className='main-block__mainTitle main-block__mainTitle_right'>Ваши удобства</h2>
             <h4 className='main-block__childTitle main-block__childTitle_right'>В Вашем распоряжении:</h4>
@@ -108,10 +116,9 @@ function Content(props) {
               <li><p>Используют компании Rambler & Co</p></li>
             </ul>
           </div>
-          <div className='vertical-line vertical-line_right'></div>
         </div>
         
-        <div className='stage-bodygraph'>
+        <div ref={body} className='stage-bodygraph'>
           <h1 className='stage-bodygraph__title'>Рассчитайте карту</h1>
           <div className='horizontal-line'></div>
           <div className='bodygraph'>
@@ -121,7 +128,7 @@ function Content(props) {
           </div>
         </div>
 
-        <div className='stage-consultation'>
+        <div ref={consultation} className='stage-consultation'>
           <h1 className='stage-consultation__title'>Заказать консультацию</h1>
           <div className='horizontal-line'></div>
           <div className='stage-consultation__services'>
@@ -131,7 +138,7 @@ function Content(props) {
           </div>
         </div>
 
-        <div className='stage-faq'>
+        <div ref={faq} className='stage-faq'>
           <h1 className='stage-faq__title'>Часто задаваемые вопросы</h1>
           <div className='horizontal-line'></div>
           <AccordionList questions={questions}/>

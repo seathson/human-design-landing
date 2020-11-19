@@ -1,36 +1,39 @@
-import React from 'react'
+import React, { useState, useCallback } from 'react'
 
-class AccordionItem extends React.Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      visible: false
+function AccordionItem(props) {
+  const [visible, setVisible] = useState(false)
+  const [check, setCheck] = useState(0)
+  
+  const answer = useCallback((node) => {
+    if (node !== null) {
+      setCheck(node.scrollHeight + 40)
     }
-    
-    this.toggleVisible = this.toggleVisible.bind(this)
+  }, [])
+
+  let answerClassName = 'accordion__answer'
+  let arrowClassName = 'fas fa-caret-down accordion__arrow'
+
+  let toggleVisible = () => {
+    setVisible(prevVisible => !prevVisible)
   }
 
-  toggleVisible() {
-    this.setState({
-      visible: !this.state.visible
-    })
-
+  if (visible) {
+    answerClassName += ' accordion__answer_visible'
+    arrowClassName += ' accordion__arrow_rotate'
   }
 
-  render() {
-    return(
-      <div className='accordion__item'>
-        <div className='accordion__question' onClick={this.toggleVisible}>{this.props.question} <i className={'fas fa-caret-down accordion__arrow' + (this.state.visible ? ' accordion__arrow_rotate' : '')}></i></div>
-        <div 
-          className={'accordion__answer' + (this.state.visible ? ' accordion__answer_visible' : '')} 
-          ref={(div) => this.answer = div} 
-          style={{height: this.state.visible ? this.answer.scrollHeight + 40 + 'px' : ''}}>
-            <p>{this.props.answer}</p>
-        </div>
+  return(
+    <div className='accordion__item'>
+      <div className='accordion__question' onClick={toggleVisible}>{props.question} <i className={arrowClassName}></i></div>
+      <div 
+        className={answerClassName}
+        ref={answer}
+        style={{height: visible ? check : 0 + 'px'}}
+        >
+          <p>{props.answer}</p>
       </div>
-    )
-  }
+    </div>
+  )
 }
 
 export default AccordionItem
