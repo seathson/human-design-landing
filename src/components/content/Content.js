@@ -22,16 +22,18 @@ function Content(props) {
   const body = useRef(null)
   const consultation = useRef(null)
   const faq = useRef(null)
+  
   useEffect(() => {
     props.updateData(body.current.getBoundingClientRect().top - 50, consultation.current.getBoundingClientRect().top - 50, faq.current.getBoundingClientRect().top + 420, faq.current.getBoundingClientRect().top + 800)
   }, [])
 
   return(
     <div className='content'>
+      <div className='container'>
 
         <div className='welcomeHD'>
           <h1 className='welcomeHD__miniTitle'>УЗНАЙТЕ СВОЙ ДИЗАЙН СЧАСТЛИВОГО ЧЕЛОВЕКА</h1>
-          <h2 className='welcomeHD__title'>ДИЗАЙН ЧЕЛОВЕКА</h2>
+          <h2 className='welcomeHD__title'>Дизайн человека</h2>
           <div className='horizontal-line'></div>
           <p className='welcomeHD__description'>В основе проекта лежит синтез удостоенных Нобелевской премии научных открытий в области генетики, а также подтвердившие свою состоятельность знания и учения с более чем тысячелетней историей: И-Цзин - система древней китайской мудрости, Астрология, Наука о Дифференциации - Дизайн Человека, Психология, Эпигенетика и Молекулярная физика. Все в Вашей жизни – результат Ваших решений, почувствуйте себя хозяином своей жизни.</p>
         </div>
@@ -143,7 +145,7 @@ function Content(props) {
           <div className='horizontal-line'></div>
           <AccordionList questions={questions}/>
         </div>
-        
+      </div>
     </div>
   )
 }

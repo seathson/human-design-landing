@@ -1,15 +1,15 @@
 .burger-menu__switcher_open
 
   &::after
-    position: absolute
+    display: flex
     transition: ease-out 0.2s
-    transform: rotate(-45deg)
+    transform: rotate(-45deg) translateX(5px)  translateY(-5px) 
     margin: 0
 
   &::before
-    position: absolute
+    display: flex
     transition: ease-out 0.2s
-    transform: rotate(45deg)
+    transform: rotate(45deg) translateX(5px) translateY(5px)
     margin: 0
 
   i

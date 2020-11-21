@@ -14,13 +14,15 @@ function Header(props) {
   
   return(
     <div className='header'>
-      <a href='http://humdesign.ru/' className='header__logo header__logo_rotating'><img className='header__logo header__logo_rotating' src={logo} alt='react'/></a>
+      <div className='header__container'>
+        <a href='http://humdesign.ru/' className='header__logo header__logo_rotating'><img className='header__logo header__logo_rotating' src={logo} alt='react'/></a>
 
-      <span className='header__title'><a href='http://humdesign.ru/'>HumDesign</a></span>
+        <span className='header__title'><a href='http://humdesign.ru/'>HumDesign</a></span>
 
-      <div className='header__menu'>
-        <BurgerMenu navigationButtons={navigationButtons} updateRef={props.updateRef} result={props.result}/>
-        <NavMenu navigationButtons={navigationButtons}/>
+        <div className='header__menu'>
+          <BurgerMenu navigationButtons={navigationButtons}/>
+          <NavMenu navigationButtons={navigationButtons}/>
+        </div>
       </div>
     </div>
   )
