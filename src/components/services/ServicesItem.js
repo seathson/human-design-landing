@@ -10,9 +10,8 @@ function ServicesItem(props) {
         <ul className='services__list'>
           {props.des.map((item, index) => <li key={index}><i className='fas fa-check'></i>{item}</li>)}
         </ul>
-        <a target='_blank' rel='noopener noreferrer' href='#' className='services__button'>
-            Заказать&nbsp;
-            <span className="fa fa-caret-right"></span>
+        <a target='_blank' href={props.href} rel='noopener noreferrer' className='services__button'>
+            Заказать&nbsp;<span className="fa fa-caret-right"></span>
         </a>
       </div>
     </div>

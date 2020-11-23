@@ -8,8 +8,8 @@ function Footer() {
   const contacts = [
     {id: 1, href: 'https://tlgg.ru/kiiirya', title: 'Telegram'},
     {id: 2, href: 'https://www.instagram.com/humdesign_off/', title: 'Instagram'},
-    {id: 3, href: '+7 (961) 225-64-21', title: 'Number'},
-    {id: 4, href: 'humdesign@bk.ru', title: 'Email'}
+    {id: 3, href: '+7 (961) 335-22-23', title: 'Number'},
+    {id: 4, href: 'ol.sadomov@gmail.com', title: 'Email'}
   ]
 
   const socials = [
