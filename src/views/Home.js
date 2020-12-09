@@ -9,9 +9,10 @@ function Home(props) {
 
   const history = useHistory(null)
   const location = useLocation(null)
-  let updateData = (bodyScroll, consultationScroll, faqScroll, contactsScroll) => {
+  let updateData = (bodyScroll, reviewScroll, consultationScroll, faqScroll, contactsScroll) => {
     setData({
       body: bodyScroll,
+      review: reviewScroll,
       consultation: consultationScroll,
       faq: faqScroll,
       contacts: contactsScroll
@@ -32,14 +33,18 @@ function Home(props) {
       }
 
       if (history.location.state.id === 2) {
-        pos = data.consultation
+        pos = data.review
       }
 
       if (history.location.state.id === 3) {
-        pos = data.faq
+        pos = data.consultation
       }
 
       if (history.location.state.id === 4) {
+        pos = data.faq
+      }
+
+      if (history.location.state.id === 5) {
         pos = data.contacts
       }
 

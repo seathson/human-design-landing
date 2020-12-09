@@ -7,9 +7,10 @@ import NavMenu from '../navMenu/NavMenu'
 function Header(props) {
   const navigationButtons = [
     {id: 1, href: props.scrollData !== null ? props.scrollData.body + window.scrollY : null, text: 'Рассчитать карту'},
-    {id: 2, href: props.scrollData !== null ? props.scrollData.consultation + window.scrollY : null, text: 'Консультация'},
-    {id: 3, href: props.scrollData !== null ? props.scrollData.faq + window.scrollY : null, text: 'FAQ'},
-    {id: 4, href: props.scrollData !== null ? props.scrollData.contacts + window.scrollY : null, text: 'Контакты'}
+    {id: 2, href: props.scrollData !== null ? props.scrollData.review + window.scrollY : null, text: 'Отзывы'},
+    {id: 3, href: props.scrollData !== null ? props.scrollData.consultation + window.scrollY : null, text: 'Консультация'},
+    {id: 4, href: props.scrollData !== null ? props.scrollData.faq + window.scrollY : null, text: 'FAQ'},
+    {id: 5, href: props.scrollData !== null ? props.scrollData.contacts + window.scrollY : null, text: 'Контакты'}
   ]
   
   return(

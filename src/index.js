@@ -1,6 +1,6 @@
 import 'react-app-polyfill/ie9'
 import 'react-app-polyfill/ie11'
-import "@babel/polyfill"
+import '@babel/polyfill'
 import 'raf/polyfill'
 import React from 'react'
 import ReactDOM from "react-dom"
@@ -16,5 +16,5 @@ ReactDOM.render(
   <BrowserRouter>
     <App/>
   </BrowserRouter>,
-  document.getElementById("root")
+  document.getElementById('root')
 );

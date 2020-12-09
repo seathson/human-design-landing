@@ -9,9 +9,10 @@ function Confidentiality(props) {
     window.scrollTo(0, 0)
   }, [])
 
-  let updateData = (bodyScroll, consultationScroll, faqScroll, contactsScroll) => {
+  let updateData = (bodyScroll, reviewScroll, consultationScroll, faqScroll, contactsScroll) => {
     setData({
       body: bodyScroll,
+      review: reviewScroll,
       consultation: consultationScroll,
       faq: faqScroll,
       contacts: contactsScroll

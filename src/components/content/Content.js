@@ -2,14 +2,15 @@ import React, { useRef, useEffect } from 'react'
 import '../../assets/sass/all.sass'
 import ServicesList from '../services/ServicesList'
 import AccordionList from '../accordion/AccordionList'
+import SwiperList from '../swiper/SwiperList'
 
 function Content(props) {
   const services = [
     {id: 1, icon: 'fas fa-book services__icon', href: 'https://up.sale/pay/product/feeddb6d', title: 'Базовое чтение', price: 1000, des: ['Расшифровка Типа', 'Разбор Профиля', 'Механизм "Ложного Я"', 'Разбор четверти', 'Стратегия вашего Типа', 'Ваша Определенность', 'Ваш внутренний Авторитет']},
-    {id: 2, icon: 'fab fa-readme services__icon', href: 'https://up.sale/pay/product/315da097', title: 'Расширенное чтение', price: 2500, des: ['Разбор Каналов', 'Ваши преимущества', 'Полный разбор Ворот Сознательное/Бессознательное', 'Деловая сфера', 'Корректное питание для мозга и тела', 'Среда обитания', 'Источник для вдохновения и успеха']},
-    {id: 3, icon: 'fas fa-globe services__icon', href: 'https://up.sale/pay/product/194d7750', title: 'Углубленное чтение', price: 3300, des:['Базовое чтение', 'Расширенное чтение', 'Ваш путь по Архетипам', 'Инкарнационный крест', 'Генетическое предназначение', 'Правильная самореализация']},
-    {id: 4, icon: 'far fa-heart services__icon', href: 'https://up.sale/pay/product/70c279a2', title: 'Совместимость', price: 2700, des: ['Основы Композита, правильное применение', 'Формула любви, насыщенность в отношениях и поиски на стороне', 'Совместимость Типов', 'Анализ ваших Ролей в ваших отношениях', 'Сила, мудрость и манипуляции в паре', 'Анализ ваших представлений о любви. Работа над ошибками']},
-    {id: 5, icon: 'fas fa-utensils services__icon', href: 'https://up.sale/pay/product/dbe30016', title: 'Составление индивидуального питания', price: 4000, des: ['По учениям Ра Уру Ху', 'Позволит открыть, "загрязненное" нынешними реалиями, истинное Я', 'Вы прийдете к своему Дизайну', 'Раскроет ваши истинные качества','Выстроим полный рацион, в соответствии с вашим Дизайном']}
+    {id: 2, icon: 'fab fa-readme services__icon', href: 'https://up.sale/pay/product/315da097', title: 'Расширенное чтение', price: 1700, des: ['Разбор Каналов', 'Ваши преимущества', 'Полный разбор Ворот Сознательное/Бессознательное', 'Деловая сфера', 'Корректное питание для мозга и тела', 'Среда обитания', 'Источник для вдохновения и успеха']},
+    {id: 3, icon: 'fas fa-globe services__icon', href: 'https://up.sale/pay/product/194d7750', title: 'Углубленное чтение', price: 2500, des:['Базовое чтение', 'Расширенное чтение', 'Ваш путь по Архетипам', 'Инкарнационный крест', 'Генетическое предназначение', 'Правильная самореализация']},
+    {id: 4, icon: 'far fa-heart services__icon', href: 'https://up.sale/pay/product/70c279a2', title: 'Совместимость', price: 2500, des: ['Основы Композита, правильное применение', 'Формула любви, насыщенность в отношениях и поиски на стороне', 'Совместимость Типов', 'Анализ ваших Ролей в ваших отношениях', 'Сила, мудрость и манипуляции в паре', 'Анализ ваших представлений о любви. Работа над ошибками']},
+    {id: 5, icon: 'fas fa-utensils services__icon', href: 'https://up.sale/pay/product/dbe30016', title: 'Составление индивидуального питания', price: 3000, des: ['По учениям Ра Уру Ху', 'Позволит открыть, "загрязненное" нынешними реалиями, истинное Я', 'Вы прийдете к своему Дизайну', 'Раскроет ваши истинные качества','Выстроим полный рацион, в соответствии с вашим Дизайном']}
   ]
 
   const questions = [
@@ -20,11 +21,12 @@ function Content(props) {
   ]
 
   const body = useRef(null)
+  const review = useRef(null)
   const consultation = useRef(null)
   const faq = useRef(null)
   
   useEffect(() => {
-    props.updateData(body.current.getBoundingClientRect().top - 50, consultation.current.getBoundingClientRect().top - 50, faq.current.getBoundingClientRect().top + 420, faq.current.getBoundingClientRect().top + 800)
+    props.updateData(body.current.getBoundingClientRect().top - 50, review.current.getBoundingClientRect().top - 50, consultation.current.getBoundingClientRect().top - 50, faq.current.getBoundingClientRect().top + 420, faq.current.getBoundingClientRect().top + 800)
   }, [])
 
   return(
@@ -127,6 +129,14 @@ function Content(props) {
             <div className='bodygraph__contain'>
               <iframe className='bodygraph__rave' title='Rave' src='https://embed.charta.life' frameBorder='0' name='chart' id='chart' style={{height: 1500 + 'px', backgroundColor: '#FFFFFF'}}></iframe>
             </div>
+          </div>
+        </div>
+
+        <div ref={review} className='stage-review'>
+          <div className='stage-review__container'>
+          <h1 className='stage-faq__title'>Отзывы</h1>
+          <div class="horizontal-line"></div>
+            <SwiperList />
           </div>
         </div>
 

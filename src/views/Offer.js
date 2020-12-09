@@ -5,9 +5,10 @@ import Header from '../components/header/Header'
 function Offer(props) {
   const [data, setData] = useState(null)
 
-  let updateData = (bodyScroll, consultationScroll, faqScroll, contactsScroll) => {
+  let updateData = (bodyScroll, reviewScroll, consultationScroll, faqScroll, contactsScroll) => {
     setData({
       body: bodyScroll,
+      review: reviewScroll,
       consultation: consultationScroll,
       faq: faqScroll,
       contacts: contactsScroll
