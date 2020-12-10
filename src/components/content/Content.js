@@ -3,14 +3,17 @@ import '../../assets/sass/all.sass'
 import ServicesList from '../services/ServicesList'
 import AccordionList from '../accordion/AccordionList'
 import Loader from '../loader/Loader'
+import { faBook, faGlobe, faUtensils } from '@fortawesome/free-solid-svg-icons'
+import { faHeart } from '@fortawesome/free-regular-svg-icons'
+import { faReadme } from '@fortawesome/free-brands-svg-icons'
 
 const AddSwiperList = React.lazy(() => new Promise(resolve => {
   setTimeout(function checkVideo() {
-    if (window.pageYOffset > 3200) {
+    if (window.pageYOffset > 3000) {
       resolve(import('../swiper/SwiperList'))
       clearTimeout()
     } else {
-      setTimeout(checkVideo, 1500)
+      setTimeout(checkVideo, 1100)
     }
   }, 1500)
 }))
@@ -28,11 +31,11 @@ const AddBodygraph = React.lazy(() => new Promise(resolve => {
 
 function Content(props) {
   const services = [
-    {id: 1, icon: 'fas fa-book services__icon', href: 'https://up.sale/pay/product/feeddb6d', title: 'Базовое чтение', price: 1500, des: ['Расшифровка Типа', 'Разбор Профиля', 'Механизм "Ложного Я"', 'Разбор четверти', 'Стратегия вашего Типа', 'Ваша Определенность', 'Ваш внутренний Авторитет']},
-    {id: 2, icon: 'fab fa-readme services__icon', href: 'https://up.sale/pay/product/315da097', title: 'Расширенное чтение', price: 2500, des: ['Базовое чтение', 'Разбор Каналов', 'Ваши преимущества', 'Полный разбор Ворот Сознательное/Бессознательное', 'Деловая сфера', 'Корректное питание для мозга и тела', 'Среда обитания', 'Источник для вдохновения и успеха']},
-    {id: 3, icon: 'fas fa-globe services__icon', href: 'https://up.sale/pay/product/194d7750', title: 'Углубленное чтение', price: 3300, des:['Базовое чтение', 'Расширенное чтение', 'Ваш путь по Архетипам', 'Инкарнационный крест', 'Генетическое предназначение', 'Правильная самореализация']},
-    {id: 4, icon: 'far fa-heart services__icon', href: 'https://up.sale/pay/product/70c279a2', title: 'Совместимость', price: 2500, des: ['Основы Композита, правильное применение', 'Формула любви, насыщенность в отношениях и поиски на стороне', 'Совместимость Типов', 'Анализ ваших Ролей в ваших отношениях', 'Сила, мудрость и манипуляции в паре', 'Анализ ваших представлений о любви. Работа над ошибками']},
-    {id: 5, icon: 'fas fa-utensils services__icon', href: 'https://up.sale/pay/product/dbe30016', title: 'Составление индивидуального питания', price: 3500, des: ['По учениям Ра Уру Ху', 'Позволит открыть, "загрязненное" нынешними реалиями, истинное Я', 'Вы прийдете к своему Дизайну', 'Раскроет ваши истинные качества','Выстроим полный рацион, в соответствии с вашим Дизайном']}
+    {id: 1, icon: faBook, href: 'https://up.sale/pay/product/feeddb6d', title: 'Базовое чтение', price: 1500, des: ['Расшифровка Типа', 'Разбор Профиля', 'Механизм "Ложного Я"', 'Разбор четверти', 'Стратегия вашего Типа', 'Ваша Определенность', 'Ваш внутренний Авторитет']},
+    {id: 2, icon: faReadme, href: 'https://up.sale/pay/product/315da097', title: 'Расширенное чтение', price: 2500, des: ['Базовое чтение', 'Разбор Каналов', 'Ваши преимущества', 'Полный разбор Ворот Сознательное/Бессознательное', 'Деловая сфера', 'Корректное питание для мозга и тела', 'Среда обитания', 'Источник для вдохновения и успеха']},
+    {id: 3, icon: faGlobe, href: 'https://up.sale/pay/product/194d7750', title: 'Углубленное чтение', price: 3300, des:['Базовое чтение', 'Расширенное чтение', 'Ваш путь по Архетипам', 'Инкарнационный крест', 'Генетическое предназначение', 'Правильная самореализация']},
+    {id: 4, icon: faHeart, href: 'https://up.sale/pay/product/70c279a2', title: 'Совместимость', price: 2500, des: ['Основы Композита, правильное применение', 'Формула любви, насыщенность в отношениях и поиски на стороне', 'Совместимость Типов', 'Анализ ваших Ролей в ваших отношениях', 'Сила, мудрость и манипуляции в паре', 'Анализ ваших представлений о любви. Работа над ошибками']},
+    {id: 5, icon: faUtensils, href: 'https://up.sale/pay/product/dbe30016', title: 'Составление индивидуального питания', price: 3500, des: ['По учениям Ра Уру Ху', 'Позволит открыть, "загрязненное" нынешними реалиями, истинное Я', 'Вы прийдете к своему Дизайну', 'Раскроет ваши истинные качества','Выстроим полный рацион, в соответствии с вашим Дизайном']}
   ]
 
   const questions = [
@@ -49,12 +52,12 @@ function Content(props) {
 
   useEffect(() => {
     props.updateData(body.current.getBoundingClientRect().top - 50, review.current.getBoundingClientRect().top - 50, consultation.current.getBoundingClientRect().top - 50, faq.current.getBoundingClientRect().top + 420, faq.current.getBoundingClientRect().top + 800)
-  })
+  }, [])
 
   return(
     <div className='content'>
       <div className='container'>
-
+        
         <div className='welcomeHD'>
           <h1 className='welcomeHD__miniTitle'>УЗНАЙТЕ СВОЙ ДИЗАЙН СЧАСТЛИВОГО ЧЕЛОВЕКА</h1>
           <h2 className='welcomeHD__title'>Дизайн человека</h2>
@@ -159,7 +162,7 @@ function Content(props) {
         <div ref={review} className='stage-review'>
           <div className='stage-review__container'>
           <h1 className='stage-faq__title'>Отзывы</h1>
-          <div class="horizontal-line"></div>
+          <div className="horizontal-line"></div>
 
           <React.Suspense fallback={<Loader/>}>
             <AddSwiperList />

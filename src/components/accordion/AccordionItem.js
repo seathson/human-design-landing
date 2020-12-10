@@ -1,4 +1,6 @@
 import React, { useState, useCallback } from 'react'
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function AccordionItem(props) {
   const [visible, setVisible] = useState(false)
@@ -11,7 +13,7 @@ function AccordionItem(props) {
   }, [])
 
   let answerClassName = 'accordion__answer'
-  let arrowClassName = 'fas fa-caret-down accordion__arrow'
+  let arrowClassName = 'accordion__arrow'
 
   let toggleVisible = () => {
     setVisible(prevVisible => !prevVisible)
@@ -24,7 +26,7 @@ function AccordionItem(props) {
 
   return(
     <div className='accordion__item'>
-      <div className='accordion__question' onClick={toggleVisible}>{props.question} <i className={arrowClassName}></i></div>
+      <div className='accordion__question' onClick={toggleVisible}>{props.question} <i className={arrowClassName}><FontAwesomeIcon icon={faCaretDown}/></i></div>
       <div 
         className={answerClassName}
         ref={answer}
