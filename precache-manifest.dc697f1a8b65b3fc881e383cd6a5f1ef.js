@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "73f0a550823acd3c53c2d461423d30ee",
+    "revision": "575f84f6b4920c0f3b6dc466f3222a5f",
     "url": "/human-design-landing/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/human-design-landing/static/css/3.6c047571.chunk.css"
   },
   {
-    "revision": "8f0ab1448bb872989d98",
-    "url": "/human-design-landing/static/css/main.b8b7bf16.chunk.css"
+    "revision": "689c2bf7c3c291776a02",
+    "url": "/human-design-landing/static/css/main.d60af08c.chunk.css"
   },
   {
     "revision": "0642e73a8a55720ebd06",
@@ -32,7 +32,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/human-design-landing/static/js/5.3f01e3e9.chunk.js"
   },
   {
-    "revision": "8f0ab1448bb872989d98",
+    "revision": "689c2bf7c3c291776a02",
     "url": "/human-design-landing/static/js/main.1d707b14.chunk.js"
   },
   {
@@ -216,6 +216,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/human-design-landing/static/media/Gilroy-Medium.f968032c.eot"
   },
   {
+    "revision": "451b99f80ea97328b05fb37fcf7d54a6",
+    "url": "/human-design-landing/static/media/Gilroy-MediumItalic.451b99f8.woff2"
+  },
+  {
+    "revision": "5e3b55f91461ae83841aa415270a74ad",
+    "url": "/human-design-landing/static/media/Gilroy-MediumItalic.5e3b55f9.eot"
+  },
+  {
+    "revision": "8c9ee6adad98f91bb4abb9c74c548030",
+    "url": "/human-design-landing/static/media/Gilroy-MediumItalic.8c9ee6ad.ttf"
+  },
+  {
+    "revision": "9dfbc96bfb71ecad05e7900fd41e3f6c",
+    "url": "/human-design-landing/static/media/Gilroy-MediumItalic.9dfbc96b.woff"
+  },
+  {
     "revision": "09ffa14271b81c1f32a723e13fcf8ce7",
     "url": "/human-design-landing/static/media/Gilroy-Regular.09ffa142.eot"
   },
@@ -280,38 +296,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/human-design-landing/static/media/Gilroy-SemiboldItalic.d9a34427.woff"
   },
   {
-    "revision": "1466b7c17259b77e4e237f43fa94948d",
-    "url": "/human-design-landing/static/media/Gilroy-Thin.1466b7c1.eot"
-  },
-  {
-    "revision": "4be23ee9a451b9125aa83730a7fcff1b",
-    "url": "/human-design-landing/static/media/Gilroy-Thin.4be23ee9.woff"
-  },
-  {
-    "revision": "71000d5f9487e92d98f40b6703a5d7c1",
-    "url": "/human-design-landing/static/media/Gilroy-Thin.71000d5f.ttf"
-  },
-  {
-    "revision": "d0028c7521b8046166c7f0c94d7059ea",
-    "url": "/human-design-landing/static/media/Gilroy-Thin.d0028c75.woff2"
-  },
-  {
-    "revision": "21faaec1d24f7b23dd8b246d006934b5",
-    "url": "/human-design-landing/static/media/Gilroy-ThinItalic.21faaec1.woff2"
-  },
-  {
-    "revision": "bd8e57f95fa2566a79b668951398acfa",
-    "url": "/human-design-landing/static/media/Gilroy-ThinItalic.bd8e57f9.woff"
-  },
-  {
-    "revision": "cb76555d6a9e0fdb96ae1c13e2c9b425",
-    "url": "/human-design-landing/static/media/Gilroy-ThinItalic.cb76555d.ttf"
-  },
-  {
-    "revision": "ed0dbe240ee4f27959d283e369f485b3",
-    "url": "/human-design-landing/static/media/Gilroy-ThinItalic.ed0dbe24.eot"
-  },
-  {
     "revision": "16700eaac0b547b6c68de3dc712e6c44",
     "url": "/human-design-landing/static/media/Gilroy-UltraLight.16700eaa.woff2"
   },
@@ -326,22 +310,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b81a38371a509508689c58e4fd6b4c79",
     "url": "/human-design-landing/static/media/Gilroy-UltraLight.b81a3837.ttf"
-  },
-  {
-    "revision": "1cb8683484c128f8dbeb7b259041526c",
-    "url": "/human-design-landing/static/media/Gilroy-UltraLightItalic.1cb86834.ttf"
-  },
-  {
-    "revision": "22c4641e50004f741f2b63dc5f12f8b9",
-    "url": "/human-design-landing/static/media/Gilroy-UltraLightItalic.22c4641e.eot"
-  },
-  {
-    "revision": "2569b9308b3380d827855df9945e5860",
-    "url": "/human-design-landing/static/media/Gilroy-UltraLightItalic.2569b930.woff"
-  },
-  {
-    "revision": "33f9fdd12242fa7fadf2c4b569acc4c9",
-    "url": "/human-design-landing/static/media/Gilroy-UltraLightItalic.33f9fdd1.woff2"
   },
   {
     "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
