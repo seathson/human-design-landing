@@ -9,22 +9,22 @@ import { faReadme } from '@fortawesome/free-brands-svg-icons'
 
 const AddSwiperList = React.lazy(() => new Promise(resolve => {
   setTimeout(function checkVideo() {
-    if (window.pageYOffset > 1500) {
+    if (window.pageYOffset > 400) {
       resolve(import('../swiper/SwiperList'))
       clearTimeout()
     } else {
-      setTimeout(checkVideo, 1100)
+      setTimeout(checkVideo, 800)
     }
   }, 1500)
 }))
 
 const AddBodygraph = React.lazy(() => new Promise(resolve => {
   setTimeout(function checkBody() {
-    if (window.pageYOffset > 800) {
+    if (window.pageYOffset > 300) {
       resolve(import('../bodygraph/Bodygraph'))
       clearTimeout()
     } else {
-      setTimeout(checkBody, 1500)
+      setTimeout(checkBody, 800)
     }
   }, 1500)
 }))
