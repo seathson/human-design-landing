@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "41a14b207038c4bd45b11623bdc434be",
+    "revision": "73f0a550823acd3c53c2d461423d30ee",
     "url": "/human-design-landing/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/human-design-landing/static/css/3.6c047571.chunk.css"
   },
   {
-    "revision": "19278233d519e61a402a",
-    "url": "/human-design-landing/static/css/main.d035223f.chunk.css"
+    "revision": "8f0ab1448bb872989d98",
+    "url": "/human-design-landing/static/css/main.b8b7bf16.chunk.css"
   },
   {
     "revision": "0642e73a8a55720ebd06",
@@ -32,7 +32,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/human-design-landing/static/js/5.3f01e3e9.chunk.js"
   },
   {
-    "revision": "19278233d519e61a402a",
+    "revision": "8f0ab1448bb872989d98",
     "url": "/human-design-landing/static/js/main.1d707b14.chunk.js"
   },
   {
@@ -214,22 +214,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f968032c404217acd8db58a03d8f25cf",
     "url": "/human-design-landing/static/media/Gilroy-Medium.f968032c.eot"
-  },
-  {
-    "revision": "451b99f80ea97328b05fb37fcf7d54a6",
-    "url": "/human-design-landing/static/media/Gilroy-MediumItalic.451b99f8.woff2"
-  },
-  {
-    "revision": "5e3b55f91461ae83841aa415270a74ad",
-    "url": "/human-design-landing/static/media/Gilroy-MediumItalic.5e3b55f9.eot"
-  },
-  {
-    "revision": "8c9ee6adad98f91bb4abb9c74c548030",
-    "url": "/human-design-landing/static/media/Gilroy-MediumItalic.8c9ee6ad.ttf"
-  },
-  {
-    "revision": "9dfbc96bfb71ecad05e7900fd41e3f6c",
-    "url": "/human-design-landing/static/media/Gilroy-MediumItalic.9dfbc96b.woff"
   },
   {
     "revision": "09ffa14271b81c1f32a723e13fcf8ce7",
