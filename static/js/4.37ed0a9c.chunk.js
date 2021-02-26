@@ -1,2 +1,0 @@
-(this["webpackJsonpmy-app"]=this["webpackJsonpmy-app"]||[]).push([[4],{577:function(e,a,t){"use strict";t.r(a);var r=t(0),c=t.n(r);a.default=function(e){return c.a.createElement("iframe",{className:"bodygraph__rave",title:"Rave",src:"https://embed.charta.life",frameBorder:"0",name:"chart",id:"chart",style:{height:"1500px",backgroundColor:"#FFFFFF"}})}}}]);
-//# sourceMappingURL=4.37ed0a9c.chunk.js.map
