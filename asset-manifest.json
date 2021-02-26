@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/human-design-landing/static/css/main.ae072e51.chunk.css",
+    "main.css": "/human-design-landing/static/css/main.d035223f.chunk.css",
     "main.js": "/human-design-landing/static/js/main.40510a82.chunk.js",
     "main.js.map": "/human-design-landing/static/js/main.40510a82.chunk.js.map",
     "runtime-main.js": "/human-design-landing/static/js/runtime-main.06b77983.js",
@@ -15,10 +15,10 @@
     "static/js/5.c08d1f32.chunk.js": "/human-design-landing/static/js/5.c08d1f32.chunk.js",
     "static/js/5.c08d1f32.chunk.js.map": "/human-design-landing/static/js/5.c08d1f32.chunk.js.map",
     "index.html": "/human-design-landing/index.html",
-    "precache-manifest.861d48b7073d1fba23f879de9d5c7911.js": "/human-design-landing/precache-manifest.861d48b7073d1fba23f879de9d5c7911.js",
+    "precache-manifest.65d825413991e045ddd99be048af08b0.js": "/human-design-landing/precache-manifest.65d825413991e045ddd99be048af08b0.js",
     "service-worker.js": "/human-design-landing/service-worker.js",
     "static/css/3.6c047571.chunk.css.map": "/human-design-landing/static/css/3.6c047571.chunk.css.map",
-    "static/css/main.ae072e51.chunk.css.map": "/human-design-landing/static/css/main.ae072e51.chunk.css.map",
+    "static/css/main.d035223f.chunk.css.map": "/human-design-landing/static/css/main.d035223f.chunk.css.map",
     "static/js/2.96893ec0.chunk.js.LICENSE.txt": "/human-design-landing/static/js/2.96893ec0.chunk.js.LICENSE.txt",
     "static/media/all.sass": "/human-design-landing/static/media/Gilroy-UltraLightItalic.33f9fdd1.woff2",
     "static/media/logo.svg": "/human-design-landing/static/media/logo.5d5d9eef.svg"
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.06b77983.js",
     "static/js/2.96893ec0.chunk.js",
-    "static/css/main.ae072e51.chunk.css",
+    "static/css/main.d035223f.chunk.css",
     "static/js/main.40510a82.chunk.js"
   ]
 }
