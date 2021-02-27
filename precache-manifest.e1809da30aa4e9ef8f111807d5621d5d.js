@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e8a887354fcb600a76ecf32cf4679091",
+    "revision": "10c233628851de324b0c58c3b3108022",
     "url": "/human-design-landing/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/human-design-landing/static/css/3.6c047571.chunk.css"
   },
   {
-    "revision": "a78dd794329d82e2b66f",
+    "revision": "0ae0a3ad93c5e873d364",
     "url": "/human-design-landing/static/css/main.093e391d.chunk.css"
   },
   {
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/human-design-landing/static/js/5.3f01e3e9.chunk.js"
   },
   {
-    "revision": "a78dd794329d82e2b66f",
-    "url": "/human-design-landing/static/js/main.b8581d78.chunk.js"
+    "revision": "0ae0a3ad93c5e873d364",
+    "url": "/human-design-landing/static/js/main.3b080b7e.chunk.js"
   },
   {
     "revision": "8a7e7b2bd813a8e63863",
