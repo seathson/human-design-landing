@@ -5,7 +5,7 @@ import Confidentiality from '../views/Confidentiality'
 import Offer from '../views/Offer'
 import Politics from '../views/Politics'
 
-function Router() {
+function Router(props) {
   return (
     <Switch>
 
@@ -15,7 +15,7 @@ function Router() {
 
       <Route path="/politics" component={Politics}/>
 
-      <Route path="/" component={Home}/>
+      <Route path='/' component={Home}/>
 
     </Switch>
   )

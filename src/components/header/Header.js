@@ -16,9 +16,9 @@ function Header(props) {
   return(
     <div className='header'>
       <div className='header__container'>
-        <a href='http://humdesign.ru/' className='header__logo header__logo_rotating'><img className='header__logo header__logo_rotating' src={logo} alt='react'/></a>
+        <a href={process.env.NODE_ENV === 'deploy' ? 'https://seathson.github.io/human-design-landing/' : ''} className='header__logo header__logo_rotating'><img className='header__logo header__logo_rotating' src={logo} alt='react'/></a>
 
-        <span className='header__title'><a href='http://humdesign.ru/'>HumDesign</a></span>
+        <span className='header__title'><a href={process.env.NODE_ENV === 'deploy' ? 'https://seathson.github.io/human-design-landing/' : ''}>HumDesign</a></span>
 
         <div className='header__menu'>
           <BurgerMenu navigationButtons={navigationButtons}/>

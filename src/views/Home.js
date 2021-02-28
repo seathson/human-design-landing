@@ -51,7 +51,7 @@ function Home(props) {
       setTimeout(() => window.scrollTo({top: pos, behavior: 'smooth'}), 100)
 
       history.push({
-        pathname: '/',
+        pathname: process.env.NODE_ENV === 'deploy' ? 'human-design-landing' : '',
         state: { prevLocation: location.pathname }
       })
     }

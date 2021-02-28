@@ -9,8 +9,8 @@ import { BrowserRouter } from 'react-router-dom'
 smoothscroll.polyfill();
 
 ReactDOM.render(
-  <BrowserRouter>
-    <App/>
+  <BrowserRouter basename={process.env.NODE_ENV === 'production' ? 'human-design-landing' : ''}>
+    <App />
   </BrowserRouter>,
   document.getElementById('root')
 );
